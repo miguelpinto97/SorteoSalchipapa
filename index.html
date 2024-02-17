@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>¡Hola Guap@!</title>
+<title>¡Sorteo Salchipapero!</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -13,17 +13,19 @@
   }
   h1 {
     color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
   }
   p {
     color: #666;
-    font-size: 18px;
-    position: relative;
+    font-size: 20px;
+    margin-bottom: 15px;
   }
   .inline-img {
-    vertical-align: middle;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto 15px; /* Centrar imagen y añadir espacio abajo */
+    max-width: 100%;
+    height: auto;
   }
   .cta-button {
     display: inline-block;
@@ -34,12 +36,15 @@
     border-radius: 5px;
     font-size: 18px;
     margin-top: 5px;
+    margin-bottom: 15px;
   }
   .steps-list {
     list-style: none;
     padding: 0;
-    margin-top: 25px;
+    margin: 0;
     text-align: left;
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: max-content; /* Ajustar al tamaño máximo del contenido */
   }
   .steps-list li {
     margin-bottom: 10px;
@@ -47,6 +52,7 @@
     position: relative;
     display: flex;
     align-items: center; /* Alinear verticalmente */
+    font-size: 18px;
   }
   .steps-list li::before {
     content: "\2713";
@@ -59,15 +65,17 @@
 </head>
 <body>
   <h1>¡Hola Guap@!</h1>
-  <p>Te invito una Salchipapa &nbsp; <img src="emoji.svg" alt="Salchipapa" class="inline-img" style="height: calc(18px + 5px);"> </p>
-  <p>Reclamarla es muy fácil!</p>
+  <p>Te invito una Salchipapa</p>
+  <img src="emoji.svg" alt="Salchipapa" class="inline-img" style="height: 80px;">
+  <p>Reclamarla es muy fácil:</p>
   <a href="https://www.instagram.com/salchipapaandina?igsh=MXI4a3FnNWl4OTk0bA==" class="cta-button">Seguir en Instagram</a>
-   <p>Sólo tienes que:</p>
- <ul class="steps-list">
+  <ul class="steps-list">
     <li>Seguirnos en Instagram</li>
     <li>Compartir el Reel del Sorteo</li>
     <li>Etiquetar a 2 amigos en el Reel</li>
   </ul>
+    <p style="margin-top:10px !important">¡Y listo! Estarás participando en el Sorteo de una Salchipapa XL</p>
+  <img src="foto.jpg" alt="Salchipapa" class="inline-img" style="width: 80%;margin-top:10px">
   <a href="https://www.instagram.com/salchipapaandina?igsh=MXI4a3FnNWl4OTk0bA==" class="cta-button">Seguir en Instagram</a>
 </body>
 </html>

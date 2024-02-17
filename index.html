@@ -17,6 +17,13 @@
   p {
     color: #666;
     font-size: 18px;
+    position: relative;
+  }
+  .inline-img {
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .cta-button {
     display: inline-block;
@@ -26,29 +33,41 @@
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 5px;
   }
   .steps-list {
     list-style: none;
     padding: 0;
-    margin-top: 40px;
+    margin-top: 25px;
+    text-align: left;
   }
   .steps-list li {
     margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+  }
+  .steps-list li::before {
+    content: "\2713";
+    color: #5cb85c;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
   }
 </style>
 </head>
 <body>
   <h1>¡Hola Guap@!</h1>
-  <p>Te invito una Salchipapa.</p>
-  <p>Para poder reclamarla solo tienes que seguirnos en Instagram!</p>
+  <p>Te invito una Salchipapa &nbsp; <img src="emoji.svg" alt="Salchipapa" class="inline-img" style="height: calc(18px + 5px);"> </p>
+  <p>Reclamarla es muy fácil!</p>
   <a href="https://www.instagram.com/salchipapaandina?igsh=MXI4a3FnNWl4OTk0bA==" class="cta-button">Seguir en Instagram</a>
-  <a href="https://www.instagram.com/salchipapaandina" class="cta-button">Seguir en Instagram</a>
-  <ul class="steps-list">
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
+   <p>Sólo tienes que:</p>
+ <ul class="steps-list">
+    <li>Seguirnos en Instagram</li>
+    <li>Compartir el Reel del Sorteo</li>
+    <li>Etiquetar a 2 amigos en el Reel</li>
   </ul>
+  <a href="https://www.instagram.com/salchipapaandina?igsh=MXI4a3FnNWl4OTk0bA==" class="cta-button">Seguir en Instagram</a>
 </body>
 </html>
